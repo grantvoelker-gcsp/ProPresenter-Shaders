@@ -1,0 +1,20 @@
+{
+    "description": "Darkens the center of the image, leaving the edges bright.",
+    "name": "Inverse Vignette",
+    "numPasses": 1,
+    "shaderFile": "InverseVignette",
+    "type": 0,
+    "uuid": "9E8A1F52-0E72-4A4D-86AA-36BF122B414F",
+    "variables": [
+        {
+            "name": "radius",
+            "label": "Radius",
+            "description": "Radius of the darkened center region",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [100, 100, 100, 100],
+            "defValue": [50, 50, 50, 50],
+            "value": [50, 50, 50, 50]
+        }
+    ]
+}

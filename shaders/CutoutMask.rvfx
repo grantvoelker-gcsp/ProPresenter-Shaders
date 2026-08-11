@@ -1,0 +1,30 @@
+{
+    "description": "Soft black cutout matte from (inverted) input alpha, over a background.",
+    "name": "Cutout Mask (Black)",
+    "numPasses": 1,
+    "shaderFile": "CutoutMask",
+    "type": 0,
+    "uuid": "144E158B-A3DD-498A-9ED8-6137E314B0E3",
+    "variables": [
+        {
+            "name": "invert",
+            "label": "Invert",
+            "description": "1 inverts the input alpha (default), 0 keeps it",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [1, 1, 1, 1],
+            "value": [1, 1, 1, 1]
+        },
+        {
+            "name": "feather",
+            "label": "Feather",
+            "description": "Blur radius of the alpha edge, in pixels (0 = hard edge)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [50, 50, 50, 50],
+            "defValue": [10, 10, 10, 10],
+            "value": [10, 10, 10, 10]
+        }
+    ]
+}

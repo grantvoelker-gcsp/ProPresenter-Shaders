@@ -1,0 +1,60 @@
+{
+    "description": "Random box/block digital glitch with RGB split, triggered by a per-60s chance.",
+    "name": "Box Glitch",
+    "numPasses": 1,
+    "shaderFile": "BoxGlitch",
+    "type": 0,
+    "uuid": "4DEC6E77-6ADA-42C8-861B-A9C06092157D",
+    "variables": [
+        {
+            "name": "frequency",
+            "label": "Chance / 60s",
+            "description": "Expected number of glitches per 60 seconds",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [60, 60, 60, 60],
+            "defValue": [6, 6, 6, 6],
+            "value": [6, 6, 6, 6]
+        },
+        {
+            "name": "amount",
+            "label": "Amount",
+            "description": "How many blocks glitch and how far they shift",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        },
+        {
+            "name": "blockSize",
+            "label": "Blocks",
+            "description": "Number of blocks across the frame (higher = smaller blocks)",
+            "type": 1,
+            "min": [1, 1, 1, 1],
+            "max": [40, 40, 40, 40],
+            "defValue": [12, 12, 12, 12],
+            "value": [12, 12, 12, 12]
+        },
+        {
+            "name": "duration",
+            "label": "Duration",
+            "description": "How long each glitch burst lasts (seconds)",
+            "type": 1,
+            "min": [0.02, 0.02, 0.02, 0.02],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.15, 0.15, 0.15, 0.15],
+            "value": [0.15, 0.15, 0.15, 0.15]
+        },
+        {
+            "name": "seed",
+            "label": "Seed",
+            "description": "Set a different value per instance so they glitch independently",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [100, 100, 100, 100],
+            "defValue": [0, 0, 0, 0],
+            "value": [0, 0, 0, 0]
+        }
+    ]
+}

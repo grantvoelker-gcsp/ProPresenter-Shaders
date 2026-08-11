@@ -1,0 +1,40 @@
+{
+    "description": "Alpha matte from luminance (luma key) with threshold, softness, and invert.",
+    "name": "Luma Matte",
+    "numPasses": 1,
+    "shaderFile": "LumaMatte",
+    "type": 0,
+    "uuid": "C1688457-4F2E-4EDF-84D5-8D87888E49AE",
+    "variables": [
+        {
+            "name": "threshold",
+            "label": "Threshold",
+            "description": "Luminance cutoff for the matte",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        },
+        {
+            "name": "softness",
+            "label": "Softness",
+            "description": "Feather width around the cutoff",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [0.5, 0.5, 0.5, 0.5],
+            "defValue": [0.1, 0.1, 0.1, 0.1],
+            "value": [0.1, 0.1, 0.1, 0.1]
+        },
+        {
+            "name": "invert",
+            "label": "Invert",
+            "description": "0 bright stays opaque, 1 dark stays opaque",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0, 0, 0, 0],
+            "value": [0, 0, 0, 0]
+        }
+    ]
+}

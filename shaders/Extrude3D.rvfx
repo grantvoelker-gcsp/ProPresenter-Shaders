@@ -1,0 +1,40 @@
+{
+    "description": "Fake 3D extrusion / long shadow with angle, size, and depth shading.",
+    "name": "Extrude 3D",
+    "numPasses": 1,
+    "shaderFile": "Extrude3D",
+    "type": 0,
+    "uuid": "D086ACB2-92BE-4956-8A00-A927185552F9",
+    "variables": [
+        {
+            "name": "angle",
+            "label": "Angle",
+            "description": "Extrusion direction in degrees (0 right, 90 down)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [360, 360, 360, 360],
+            "defValue": [45, 45, 45, 45],
+            "value": [45, 45, 45, 45]
+        },
+        {
+            "name": "size",
+            "label": "Size",
+            "description": "Extrusion depth in pixels",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [100, 100, 100, 100],
+            "defValue": [30, 30, 30, 30],
+            "value": [30, 30, 30, 30]
+        },
+        {
+            "name": "shade",
+            "label": "Shade",
+            "description": "How much the extrusion darkens with depth (0 flat, 1 dark)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        }
+    ]
+}

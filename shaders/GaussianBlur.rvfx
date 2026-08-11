@@ -1,0 +1,20 @@
+{
+    "description": "True Gaussian blur (2-pass separable, Gaussian-weighted taps).",
+    "name": "Gaussian Blur",
+    "numPasses": 2,
+    "shaderFile": "GaussianBlur",
+    "type": 0,
+    "uuid": "71714D5E-6EBC-405C-886F-4ABE186B7385",
+    "variables": [
+        {
+            "name": "blurAmount",
+            "label": "Intensity",
+            "description": "amount to blur by",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "description": "Ripple distortion from the side, with an Intensity control.",
+    "name": "Ripple Side (Intensity)",
+    "numPasses": 1,
+    "shaderFile": "RippleSideIntensity",
+    "type": 0,
+    "uuid": "68C08E22-9E76-4ACA-9E21-770101F80888",
+    "variables": [
+        {
+            "name": "speed",
+            "label": "Speed",
+            "description": "Speed of ripple",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [2, 2, 2, 2],
+            "defValue": [1, 1, 1, 1],
+            "value": [1, 1, 1, 1]
+        },
+        {
+            "name": "intensity",
+            "label": "Intensity",
+            "description": "Strength of the ripple distortion (1 = default, 0 = none)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [3, 3, 3, 3],
+            "defValue": [1, 1, 1, 1],
+            "value": [1, 1, 1, 1]
+        }
+    ]
+}

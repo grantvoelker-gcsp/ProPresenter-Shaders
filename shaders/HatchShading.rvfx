@@ -1,0 +1,40 @@
+{
+    "description": "Pen-and-ink cross-hatch shading driven by luminance.",
+    "name": "Hatch Shading",
+    "numPasses": 1,
+    "shaderFile": "HatchShading",
+    "type": 0,
+    "uuid": "1D6C79F5-375E-44FB-8FF2-EAF6E8478AE6",
+    "variables": [
+        {
+            "name": "spacing",
+            "label": "Line Spacing",
+            "description": "Pixels between hatch lines",
+            "type": 1,
+            "min": [2, 2, 2, 2],
+            "max": [40, 40, 40, 40],
+            "defValue": [9, 9, 9, 9],
+            "value": [9, 9, 9, 9]
+        },
+        {
+            "name": "thickness",
+            "label": "Thickness",
+            "description": "Hatch line width in pixels",
+            "type": 1,
+            "min": [0.25, 0.25, 0.25, 0.25],
+            "max": [6, 6, 6, 6],
+            "defValue": [1.5, 1.5, 1.5, 1.5],
+            "value": [1.5, 1.5, 1.5, 1.5]
+        },
+        {
+            "name": "darkness",
+            "label": "Darkness",
+            "description": "How much of the image gets hatched (0 only shadows, 1 nearly all)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        }
+    ]
+}

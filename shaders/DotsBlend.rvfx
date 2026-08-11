@@ -1,0 +1,40 @@
+{
+    "description": "Dots with traditional blend modes.",
+    "name": "Dots (Blend)",
+    "numPasses": 1,
+    "shaderFile": "DotsBlend",
+    "type": 0,
+    "uuid": "60B4F0AF-78A4-4F76-B290-5FFC56769DFB",
+    "variables": [
+        {
+            "name": "outlineAmount",
+            "label": "Intensity",
+            "description": "amount to blur by",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        },
+        {
+            "name": "colorLevel",
+            "label": "Color",
+            "description": "amount to blur by",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        },
+        {
+            "name": "blendMode",
+            "label": "Blend Mode",
+            "description": "0 Normal - 1 Multiply - 2 Screen - 3 Overlay - 4 Darken - 5 Lighten - 6 Difference - 7 Exclusion - 8 Add - 9 Subtract - 10 HardLight - 11 SoftLight - 12 ColorDodge - 13 ColorBurn",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [13, 0, 0, 0],
+            "defValue": [0, 0, 0, 0],
+            "value": [0, 0, 0, 0]
+        }
+    ]
+}

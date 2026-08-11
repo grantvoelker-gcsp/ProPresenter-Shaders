@@ -1,0 +1,70 @@
+{
+    "description": "Circle/oval alpha mask with position, scale, and edge fade.",
+    "name": "Shape Mask (Ellipse)",
+    "numPasses": 1,
+    "shaderFile": "ShapeMaskEllipse",
+    "type": 0,
+    "uuid": "9EE213BD-661C-4DBF-B5C5-03520F139875",
+    "variables": [
+        {
+            "name": "centerX",
+            "label": "Center X",
+            "description": "Horizontal center (0 left, 1 right)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        },
+        {
+            "name": "centerY",
+            "label": "Center Y",
+            "description": "Vertical center (0 top, 1 bottom)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        },
+        {
+            "name": "scaleX",
+            "label": "Scale X",
+            "description": "Horizontal radius (0..1 of width)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.4, 0.4, 0.4, 0.4],
+            "value": [0.4, 0.4, 0.4, 0.4]
+        },
+        {
+            "name": "scaleY",
+            "label": "Scale Y",
+            "description": "Vertical radius (0..1 of height)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.4, 0.4, 0.4, 0.4],
+            "value": [0.4, 0.4, 0.4, 0.4]
+        },
+        {
+            "name": "fade",
+            "label": "Edge Fade",
+            "description": "Feather width at the edge",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.1, 0.1, 0.1, 0.1],
+            "value": [0.1, 0.1, 0.1, 0.1]
+        },
+        {
+            "name": "invert",
+            "label": "Invert",
+            "description": "0 keep inside, 1 keep outside",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0, 0, 0, 0],
+            "value": [0, 0, 0, 0]
+        }
+    ]
+}

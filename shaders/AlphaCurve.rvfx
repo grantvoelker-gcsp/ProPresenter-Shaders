@@ -1,0 +1,40 @@
+{
+    "description": "Adjusts opacity by luminance: separate dark, midtone, and light opacity.",
+    "name": "Alpha Curve",
+    "numPasses": 1,
+    "shaderFile": "AlphaCurve",
+    "type": 0,
+    "uuid": "B7B9BEE8-ED68-46BB-9621-09BDCA0CAB98",
+    "variables": [
+        {
+            "name": "darkOpacity",
+            "label": "Dark Opacity",
+            "description": "Opacity applied to the darkest pixels (luma 0)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [1, 1, 1, 1],
+            "value": [1, 1, 1, 1]
+        },
+        {
+            "name": "midOpacity",
+            "label": "Midtone Opacity",
+            "description": "Opacity applied to midtone pixels (luma 0.5)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [1, 1, 1, 1],
+            "value": [1, 1, 1, 1]
+        },
+        {
+            "name": "lightOpacity",
+            "label": "Light Opacity",
+            "description": "Opacity applied to the brightest pixels (luma 1)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [1, 1, 1, 1],
+            "value": [1, 1, 1, 1]
+        }
+    ]
+}

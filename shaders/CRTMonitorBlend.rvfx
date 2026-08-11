@@ -1,0 +1,40 @@
+{
+    "description": "Old CRT Monitor with traditional blend modes.",
+    "name": "CRT Monitor (Blend)",
+    "numPasses": 1,
+    "shaderFile": "CRTMonitorBlend",
+    "type": 0,
+    "uuid": "0816703C-F4E9-4BC8-A472-C2183EE45CC7",
+    "variables": [
+        {
+            "name": "strength",
+            "label": "Strength",
+            "description": "strength of RGB",
+            "type": 1,
+            "min": [0.5, 0.5, 0.5, 0.5],
+            "max": [1.7, 1, 1, 1],
+            "defValue": [1.2, 0.5, 0.5, 1],
+            "value": [1.2, 1, 1, 1]
+        },
+        {
+            "name": "uPixelSize",
+            "label": "Size",
+            "description": "size of RGB pixel",
+            "type": 1,
+            "min": [1.5, 0.5, 0.5, 0.5],
+            "max": [5, 1, 1, 1],
+            "defValue": [3, 0.5, 0.5, 1],
+            "value": [3, 1, 1, 1]
+        },
+        {
+            "name": "blendMode",
+            "label": "Blend Mode",
+            "description": "0 Normal - 1 Multiply - 2 Screen - 3 Overlay - 4 Darken - 5 Lighten - 6 Difference - 7 Exclusion - 8 Add - 9 Subtract - 10 HardLight - 11 SoftLight - 12 ColorDodge - 13 ColorBurn",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [13, 0, 0, 0],
+            "defValue": [0, 0, 0, 0],
+            "value": [0, 0, 0, 0]
+        }
+    ]
+}

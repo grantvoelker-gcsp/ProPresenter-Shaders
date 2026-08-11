@@ -1,0 +1,50 @@
+{
+    "description": "Perlin-noise sheen shimmer drifting along a given angle.",
+    "name": "Sheen Shimmer",
+    "numPasses": 1,
+    "shaderFile": "Sheen",
+    "type": 0,
+    "uuid": "6806350F-8337-46AC-A2BC-98DC615F21D2",
+    "variables": [
+        {
+            "name": "angle",
+            "label": "Angle",
+            "description": "Direction the shimmer drifts, in degrees",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [360, 360, 360, 360],
+            "defValue": [45, 45, 45, 45],
+            "value": [45, 45, 45, 45]
+        },
+        {
+            "name": "speed",
+            "label": "Speed",
+            "description": "How fast the shimmer moves",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [3, 3, 3, 3],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        },
+        {
+            "name": "intensity",
+            "label": "Intensity",
+            "description": "Sheen brightness",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [2, 2, 2, 2],
+            "defValue": [0.6, 0.6, 0.6, 0.6],
+            "value": [0.6, 0.6, 0.6, 0.6]
+        },
+        {
+            "name": "scale",
+            "label": "Scale",
+            "description": "Shimmer size (higher = finer)",
+            "type": 1,
+            "min": [0.5, 0.5, 0.5, 0.5],
+            "max": [10, 10, 10, 10],
+            "defValue": [3, 3, 3, 3],
+            "value": [3, 3, 3, 3]
+        }
+    ]
+}

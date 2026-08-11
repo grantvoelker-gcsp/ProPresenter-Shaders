@@ -1,0 +1,50 @@
+{
+    "description": "Radial blur held at a fixed angle instead of animating.",
+    "name": "Radial Blur (Angle)",
+    "numPasses": 1,
+    "shaderFile": "RadialBlurAngle",
+    "type": 0,
+    "uuid": "3E12DAE6-A132-4A81-BB6A-DCE4BF099714",
+    "variables": [
+        {
+            "name": "blendValue",
+            "label": "Blend",
+            "description": "Amount to Blend",
+            "type": 1,
+            "min": [0.01, 0.01, 0.01, 0.01],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        },
+        {
+            "name": "angle",
+            "label": "Angle",
+            "description": "Blur direction in degrees (0-360)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [360, 360, 360, 360],
+            "defValue": [0, 0, 0, 0],
+            "value": [0, 0, 0, 0]
+        },
+        {
+            "name": "iterations",
+            "label": "Iterations",
+            "description": "Amount to Blend",
+            "type": 1,
+            "min": [4.0, 0.01, 0.01, 0.01],
+            "max": [24, 1, 1, 1],
+            "defValue": [10, 0.5, 0.5, 0.5],
+            "value": [10, 0.5, 0.5, 0.5]
+        },
+        {
+            "name": "decay",
+            "label": "Decay",
+            "description": "Amount to Blend",
+            "type": 1,
+            "min": [0.8, 0.01, 0.01, 0.01],
+            "max": [1.05, 1, 1, 1],
+            "defValue": [0.97, 0.5, 0.5, 0.5],
+            "value": [0.97, 0.5, 0.5, 0.5]
+        }
+    ]
+}

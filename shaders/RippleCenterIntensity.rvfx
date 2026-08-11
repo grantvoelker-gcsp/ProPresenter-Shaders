@@ -1,0 +1,30 @@
+{
+    "description": "Ripple distortion from the center, with an Intensity control.",
+    "name": "Ripple Center (Intensity)",
+    "numPasses": 1,
+    "shaderFile": "RippleCenterIntensity",
+    "type": 0,
+    "uuid": "C2979D85-6694-498E-B311-8BA2334C814A",
+    "variables": [
+        {
+            "name": "speed",
+            "label": "Speed",
+            "description": "Speed of ripple",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [2, 2, 2, 2],
+            "defValue": [1, 1, 1, 1],
+            "value": [1, 1, 1, 1]
+        },
+        {
+            "name": "intensity",
+            "label": "Intensity",
+            "description": "Strength of the ripple distortion (1 = default, 0 = none)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [3, 3, 3, 3],
+            "defValue": [1, 1, 1, 1],
+            "value": [1, 1, 1, 1]
+        }
+    ]
+}

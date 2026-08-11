@@ -1,0 +1,140 @@
+{
+    "description": "Sci-fi hologram glitch: scanlines, roll bar, RGB split, band tearing, flicker, noise, glow, tint.",
+    "name": "Hologram Glitch",
+    "numPasses": 1,
+    "shaderFile": "HologramGlitch",
+    "type": 0,
+    "uuid": "EB0C46A4-E94C-44A4-891B-D84059F86FB9",
+    "variables": [
+        {
+            "name": "scanAmount",
+            "label": "Scanline Amount",
+            "description": "Strength of the horizontal scanlines",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.3, 0.3, 0.3, 0.3],
+            "value": [0.3, 0.3, 0.3, 0.3]
+        },
+        {
+            "name": "scanDensity",
+            "label": "Scanline Density",
+            "description": "Number of scanlines across the height",
+            "type": 1,
+            "min": [20, 20, 20, 20],
+            "max": [600, 600, 600, 600],
+            "defValue": [200, 200, 200, 200],
+            "value": [200, 200, 200, 200]
+        },
+        {
+            "name": "rollAmount",
+            "label": "Roll Amount",
+            "description": "Brightness of the rolling bar (0 = off)",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.3, 0.3, 0.3, 0.3],
+            "value": [0.3, 0.3, 0.3, 0.3]
+        },
+        {
+            "name": "rollSpeed",
+            "label": "Roll Speed",
+            "description": "Scroll speed of the rolling bar",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [2, 2, 2, 2],
+            "defValue": [0.15, 0.15, 0.15, 0.15],
+            "value": [0.15, 0.15, 0.15, 0.15]
+        },
+        {
+            "name": "rgbSplit",
+            "label": "RGB Split",
+            "description": "Chromatic aberration amount",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [2, 2, 2, 2],
+            "defValue": [0.3, 0.3, 0.3, 0.3],
+            "value": [0.3, 0.3, 0.3, 0.3]
+        },
+        {
+            "name": "glitchChance",
+            "label": "Glitch Chance / 60s",
+            "description": "Expected band-tearing bursts per 60 seconds",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [60, 60, 60, 60],
+            "defValue": [12, 12, 12, 12],
+            "value": [12, 12, 12, 12]
+        },
+        {
+            "name": "glitchAmount",
+            "label": "Glitch Amount",
+            "description": "Band-tearing strength during a burst",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.5, 0.5, 0.5, 0.5],
+            "value": [0.5, 0.5, 0.5, 0.5]
+        },
+        {
+            "name": "flicker",
+            "label": "Flicker",
+            "description": "Brightness flicker amount",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.15, 0.15, 0.15, 0.15],
+            "value": [0.15, 0.15, 0.15, 0.15]
+        },
+        {
+            "name": "noise",
+            "label": "Noise",
+            "description": "Grain amplitude",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [0.3, 0.3, 0.3, 0.3],
+            "defValue": [0.03, 0.03, 0.03, 0.03],
+            "value": [0.03, 0.03, 0.03, 0.03]
+        },
+        {
+            "name": "glow",
+            "label": "Glow",
+            "description": "Holographic glow strength",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [2, 2, 2, 2],
+            "defValue": [0.4, 0.4, 0.4, 0.4],
+            "value": [0.4, 0.4, 0.4, 0.4]
+        },
+        {
+            "name": "tintAmount",
+            "label": "Tint Amount",
+            "description": "How strongly to tint toward the holo color",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.6, 0.6, 0.6, 0.6],
+            "value": [0.6, 0.6, 0.6, 0.6]
+        },
+        {
+            "name": "seed",
+            "label": "Seed",
+            "description": "Set a different value per instance so they glitch independently",
+            "type": 1,
+            "min": [0, 0, 0, 0],
+            "max": [100, 100, 100, 100],
+            "defValue": [0, 0, 0, 0],
+            "value": [0, 0, 0, 0]
+        },
+        {
+            "name": "tintColor",
+            "label": "Tint",
+            "description": "Hologram color",
+            "type": 2,
+            "min": [0, 0, 0, 0],
+            "max": [1, 1, 1, 1],
+            "defValue": [0.4, 0.8, 1.0, 1.0],
+            "value": [0.4, 0.8, 1.0, 1.0]
+        }
+    ]
+}
